@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("../partials/docHead", {}) %>
+  <link rel="stylesheet" href="/styles/index.css">
+  <title>Conscientious | Fight Distraction On The Internet</title>
+</head>
+<body>
+  <%- include("../partials/nav", {}) %>
+  <section id="splash">
+    <div class="container grid-sm">
+      <div class="columns">
+        <div class="column">
+          <h1 class="text-center">Stay on task, online.</h1>
+          <p class="text-center">
+            A Chrome Extension that prevents distraction and boosts productivity.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="cloud-bg"></div>
+  </section>
+  <section id="explanation">
+    <div class="container grid-sm">
+      <div class="divider"></div>
+      <div class="columns">
+        <div class="column">
+          <p>
+            <span class="initial-letter">I</span>n 2019, many of us are using the internet to accomplish our work. New technologies have enabled us to increase our productivity as knowledge workers beyond what was previously possible. The information we need to do our work is cheaper and easier to access than ever before.
+          </p>
+          <p>
+            But these advances can be a double-edged sword. Knowledge is free, but we have become unwilling vendors in an attention economy that distracts us with every click, scroll and refresh. In turn, we often find ourselves unable to focus on our most important work.
+          </p>
+          <p>
+            Work we are paid for, or work we do for fun is intercepted by clickbait headlines, autoplaying videos and the impulses we have developed on the backs of these designs.
+          </p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h3>Website blockers are dumb.</h3>
+          <p>
+            Blockers like StayFocusd and Freedom are good for completely preventing access to certain websites that are absolute distractions, but they lack intelligence - they either block or they don't.
+          </p>
+          <p>
+            Sometimes sites like YouTube or Reddit are acutally useful for helping you to accomplish your work, and moreover they can only block as many websites as you give them.
+          </p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h3>Conscientious; intelligent.</h3>
+          <p>
+            Natural language processing and other heuristics are used to try and understand what you are working on and whether any new page that you open is on task or not.
+          </p>
+          <p>
+            Every time you get distracted, it takes extra time and effort to return to the original task. Conscientious prevents this distraction and trains you to stay on task.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="waitlist">
+    <div class="container grid-sm">
+      <div class="columns">
+        <div class="column col-mx-auto">
+          <form action="/waitlist" method="POST">
+              <p class="text-center ">Join The Waitlist To Be Notified On Launch</p>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" class="form-input text-center" name="email" placeholder="jane@example.com" required>
+              </div>
+              <div class="form-group">
+                <div class="columns" for="receiveUpdates">
+                  <div class="column col-1">
+                    <input class="form-checkbox" type="checkbox" name="receiveUpdates">
+                  </div>
+                  <div class="column col-11">
+                    <span class="text-small">
+                      Send me other updates like blog posts, etc (p.s. I won't start spamming you with shallow "content")
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-lg p-centered">Join Waitlist</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container grid-lg text-center">
+    <div class="columns">
+      <div class="column text-light">
+        © 2019 Conscientious
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

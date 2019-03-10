@@ -1,0 +1,36 @@
+Arguments: 
+  /home/emile/.nvm/versions/node/v10.15.0/bin/node /home/emile/.yarn/bin/yarn.js init
+
+PATH: 
+  /home/emile/.gem/ruby/2.3.0/bin:/home/emile/.yarn/bin:/home/emile/.config/yarn/global/node_modules/.bin:/home/emile/.nvm/versions/node/v10.15.0/bin:/home/emile/bin:/home/emile/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.15.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/home/emile/.yarn/lib/cli.js:125657:13)
+      at Interface.emit (events.js:182:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:168:10)
+      at ReadStream.emit (events.js:182:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1022:36)
+      at ReadStream.emit (events.js:182:13)
+      at addChunk (_stream_readable.js:283:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

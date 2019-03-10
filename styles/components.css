@@ -1,0 +1,27 @@
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+nav .links a {
+  margin: 0 1rem;
+}
+
+a.logo {
+  align-items: center;
+  color: #5755d9;
+  display: flex;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.8rem;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+a.logo img {
+  margin-right: 0.3rem;
+}
