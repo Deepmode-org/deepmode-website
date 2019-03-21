@@ -22,6 +22,10 @@ router.get("/", function(req, res) {
   res.render("index", {})	
 })
 
+router.get("/motivation", function(req, res) {
+  res.render("motivation", {})
+})
+
 router.get("/success", function(req, res) {
   res.render("success", {})
 })

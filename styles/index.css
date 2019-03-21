@@ -1,23 +1,28 @@
 body {
-  padding-bottom: 5rem;
+  background: #f5f6fa;
+  padding-bottom: 2rem;
 }
 
 #splash {
-  padding-top: 3rem;
+  /*padding-top: 3rem;*/
   position: relative;
   z-index: 3;
 }
 
 #splash h1 {
-  font-size: 3rem;
+  /*font-size: 3rem;*/
+}
+
+#splash button {
+  margin: 0 1rem;
 }
 
 .divider {
   margin: 2rem auto;
 }
 
-.initial-letter {
-  font-size: 2rem;
+#features-and-benefits-1 {
+  margin-top: 2rem;
 }
 
 #cloud-bg {
@@ -45,14 +50,7 @@ body {
 }
 
 #waitlist {
-  position: relative;
-  z-index: 3;
-}
-
-#waitlist form {
-  border-radius: 0.25rem;
-  border: 0.1rem solid #222;
-  padding: 2rem;
+  margin-top: 3rem;
 }
 
 #waitlist .form-checkbox {
@@ -60,7 +58,7 @@ body {
   width: 1rem;
 }
 
-#waitlist form > * {
+#waitlist input[type=email] {
   margin-bottom: 1rem;
 }
 
