@@ -69,39 +69,11 @@
       <div class="divider"></div>
       <div class="columns">
         <div class="column">
-          <h5>Early Access</h5>
-          <p>
-            We'll be getting the beta version of our product out soon so register your email address if you want to be able to start using it for free.
-          </p>
-          <form action="/waitlist" method="POST">  
-            <div class="form-group">
-              <label class="form-label" for="email">Email Address</label>
-              <input type="email" class="form-input" name="email" placeholder="ben@distracted.com" required>
-            </div>
-            <!-- <div class="form-group">
-              <div class="columns" for="receiveUpdates">
-                <div class="column col-1">
-                  <input class="form-checkbox" type="checkbox" name="receiveUpdates">
-                </div>
-                <div class="column col-11">
-                  <span class="text-small">
-                    Send me other updates like blog posts, etc (p.s. I won't start spamming you with shallow "content")
-                  </span>
-                </div>
-              </div>
-            </div> -->
-            <button type="submit" class="btn">Submit</button>
-          </form>
+          <%- include("../partials/earlyAccess", {}) %>
         </div>
       </div>
     </div>
   </section>
-  <footer class="container grid-md text-center">
-    <div class="columns">
-      <div class="column">
-        © 2019 Conscientious
-      </div>
-    </div>
-  </footer>
+  <%- include("../partials/footer", {}) %>
 </body>
 </html>
