@@ -26,6 +26,14 @@ router.get("/motivation", function(req, res) {
   res.render("motivation", {})
 })
 
+router.get("/terms", function(req, res) {
+  res.render("termsOfService", {})
+})
+
+router.get("/privacy", function(req, res) {
+  res.render("privacyPolicy", {})
+})
+
 router.get("/success", function(req, res) {
   res.render("success", {})
 })
