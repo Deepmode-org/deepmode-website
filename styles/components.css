@@ -27,3 +27,16 @@ a.logo {
 a.logo img {
   margin-right: -0.5rem;
 }
+
+#early-access-signup .checkbox span {
+  margin-left: 0.5rem;
+}
+
+#early-access-signup .btn {
+  margin-top: 0.5rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
