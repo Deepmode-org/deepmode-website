@@ -1,8 +1,13 @@
+*::selection {
+  background: #341f97;
+  color: #fff;
+}
+
 nav {
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  margin-top: -1rem;
+  justify-content: center;
+  /*margin-top: -1rem;*/
   padding: 0.5rem;
 }
 
@@ -14,18 +19,20 @@ a.logo {
   align-items: center;
   color: #3d424e;
   display: flex;
-  font-family: "IBM Plex Serif", sans-serif;
-  font-size: 0.8rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
   font-weight: 600;
   justify-content: center;
+  /*letter-spacing: 2px;*/
   margin-left: auto;
   margin-right: auto;
   padding: 0.5rem;
   text-decoration: none;
+  text-transform: lowercase;
 }
 
 a.logo img {
-  margin-right: -0.5rem;
+  /*margin-right: 0.5rem;*/
 }
 
 #early-access-signup .checkbox span {
