@@ -1,7 +1,7 @@
 {
-  "name": "conscientious-website",
+  "name": "deepmode-website",
   "version": "1.0.0",
-  "description": "Website for Conscientious.app",
+  "description": "Website for Deepmode",
   "main": "index.js",
   "author": "Emile <emilepw@hotmail.co.uk>",
   "license": "MIT",
