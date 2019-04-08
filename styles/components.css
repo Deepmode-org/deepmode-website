@@ -6,9 +6,9 @@
 nav {
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   /*margin-top: -1rem;*/
-  padding: 0.5rem;
+  padding: 1rem 0;
 }
 
 nav .links a {
@@ -26,7 +26,7 @@ a.logo {
   /*letter-spacing: 2px;*/
   margin-left: auto;
   margin-right: auto;
-  padding: 0.5rem;
+  /*padding: 0.5rem;*/
   text-decoration: none;
   text-transform: lowercase;
 }

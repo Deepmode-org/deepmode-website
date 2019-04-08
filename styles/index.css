@@ -20,8 +20,12 @@ body {
   margin: 2rem auto;
 }
 
-#features-and-benefits-1 {
-  margin-top: 2rem;
+#features-and-benefits {
+  margin-top: 3rem;
+}
+
+#features-and-benefits img {
+  margin-top: -1rem;
 }
 
 #cloud-bg {
