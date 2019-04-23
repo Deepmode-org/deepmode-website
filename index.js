@@ -5,7 +5,7 @@ const app = express()
 const router = express.Router()
 const ejs = require("ejs")
 const port = process.env.PORT
-const { Q } = require("./db/")
+// const { Q } = require("./db/")
 
 app.use(bodyParser.json())
 app.use(

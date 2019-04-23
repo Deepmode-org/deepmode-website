@@ -8,7 +8,7 @@ nav {
   display: flex;
   justify-content: space-between;
   /*margin-top: -1rem;*/
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 nav .links a {
@@ -28,7 +28,7 @@ a.logo {
   margin-right: auto;
   /*padding: 0.5rem;*/
   text-decoration: none;
-  text-transform: lowercase;
+  /*text-transform: lowercase;*/
 }
 
 a.logo img {

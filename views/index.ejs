@@ -6,21 +6,23 @@
   <title>Deepmode | Fight Distraction On The Internet</title>
 </head>
 <body>
-  <%- include("../partials/nav", {}) %>
   <section id="splash">
-    <div class="container grid-md">
+    <%- include("../partials/nav", { light: true }) %>
+    <div class="container grid-lg">
       <div class="columns">
-        <div class="column col-8 col-sm-12 col-mx-auto">
-          <h1>
-            Block <em class="text-italic">every</em> distraction online, not just your blacklist
+        <div class="column col-10 col-sm-12 col-mx-auto">
+          <h1 class="text-light text-center">
+            Goodbye distraction. Hello productivity.
           </h1>
-          <p>
-            Deepmode uses AI to recognise and block distractions as they appear, keeping you mindful and productive.
+          <p class="text-light text-center">
+            A Chrome extension that recognises and blocks <em class="text-italic">every</em> distraction, keeping you mindful and productive
           </p>
         </div>
-        <!-- <div class="column col-5 col-sm-12">
-          <img src="/images/browser-block.svg" width="100%">
-        </div> -->
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-sm-12 col-mx-auto">
+          <img id="demo" src="/images/deepmode-demo.gif" width="100%">
+        </div>
       </div>
       <div class="columns">
         <div class="column text-center">
