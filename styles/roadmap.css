@@ -1,0 +1,38 @@
+#roadmap {
+  /*display: flex;
+  flex-direction: column;
+  list-style: none;*/
+}
+
+#roadmap .feature {
+  /*align-items: center;*/
+  background: #fff;
+  border: 0.1rem solid #bcc3ce;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  /*justify-content: space-between;*/
+  margin: 0.5rem auto;
+  padding: 0.5rem 1rem;
+  /*width: auto;*/
+}
+
+.feature p {
+  margin: 0;
+}
+
+.feature form {
+  align-items: center;
+  display: flex;
+  /*justify-content: */
+}
+
+.feature form > * {
+  margin-right: 0.5rem;
+}
+
+.feature h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+

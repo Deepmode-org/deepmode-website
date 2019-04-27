@@ -5,7 +5,7 @@ const app = express()
 const router = express.Router()
 const ejs = require("ejs")
 const port = process.env.PORT
-// const { Q } = require("./db/")
+const { Q } = require("./db/")
 
 app.use(bodyParser.json())
 app.use(
@@ -21,6 +21,33 @@ app.use(express.static(path.join(__dirname, "/")), router)
 router.get("/", function(req, res) {
   res.render("index", {})	
 })
+
+router.get("/roadmap", async function(req, res) {
+  const roadmap = await Q.roadmapFeature.getAll();
+  const { feature_success } = req.query;
+  let featureChosen;
+  if (feature_success) {
+    featureChosen = roadmap.find(feature => feature.id === Number(feature_success));
+    if (featureChosen)
+      featureChosen = featureChosen.name;
+  }
+  res.render("roadmap", {
+    roadmap: roadmap,
+    feature_success,
+    featureChosen
+  });
+})
+
+router.post("/roadmapWaitlist", async function(req, res) {
+  try {
+    const { email, featureID } = req.body;
+    await Q.roadmapWaitlist.insertOne(email, featureID);
+    res.redirect("/roadmap?feature_success=" + featureID);
+  } catch (err) {
+    console.log(err);
+    res.status(500).send();
+  }
+});
 
 router.get("/motivation", function(req, res) {
   res.render("motivation", {})

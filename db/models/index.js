@@ -1,3 +1,4 @@
 module.exports = {
-  waitlist: require("./waitlist")
+  roadmapFeature: require("./roadmapFeature"),
+  roadmapWaitlist: require("./roadmapWaitlist")
 };

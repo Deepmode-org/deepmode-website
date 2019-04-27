@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("../partials/docHead", {}) %>
+  <link rel="stylesheet" href="/styles/roadmap.css">
+  <title>Deepmode | Fight Distraction On The Internet</title>
+</head>
+<body>
+  <%- include("../partials/nav", { light: false }) %>
+  <section id="roadmap">
+    <div class="container grid-md">
+      <div class="columns">
+        <div class="column">
+          <% if (feature_success) { %>
+          <div class="toast toast-success">
+            Thanks! We'll notify you when the feature "<%= featureChosen %>" is released.
+          </div>
+          <% } %>
+          <h1>Roadmap</h1>
+          <p>
+            Here's what's in the pipeline for Deepmode. If there's a feature below that you'd really want before using it, leave your email address to be notified when it's released. This also helps us to prioritise out roadmap.
+          </p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div id="roadmap">
+            <% roadmap.forEach(function(feature) { %>
+            <div id="feature-<%= feature.id %>"  class="feature">
+              <h4><%= feature.name %></h4>
+              <form method="POST" action="/roadmapWaitlist">
+                <p>Get notified when this feature is released:</p>
+                <input placeholder="jane@example.com" type="email" class="form-input input-sm input-inline" name="email">
+                <input type="hidden" value="<%= feature.id %>" name="featureID">
+                <button type="submit" class="feature-notify btn btn-sm">
+                  Notify me
+                </button>
+              </form>
+            </div>
+            <% }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%- include("../partials/footer", {}) %>
+</body>
+</html>
