@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("../partials/docHead", {}) %>
+  <link rel="stylesheet" href="/styles/post.css">
+  <title><%= post.title %> | Deepmode</title>
+</head>
+<body>
+  <%- include("../partials/nav", { light: false }) %>
+  <div class="container grid-sm">
+    <section id="post">
+      <div class="columns">
+        <div class="column">
+          <h1 class=""><%= post.title %></h1>
+          <%- post.content %>
+          <p class="text-gray">
+            Last modified at: <%= post.modified_at.split("T")[0].replace(/-/g, "/") %>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

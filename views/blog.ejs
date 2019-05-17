@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("../partials/docHead", {}) %>
+  <link rel="stylesheet" href="/styles/motivation.css">
+  <title>Blog | Deepmode</title>
+</head>
+<body>
+  <%- include("../partials/nav", { light: false }) %>
+  <section id="posts">
+    <div class="container grid-md">
+      <div class="columns">
+        <div class="column">
+          <% posts.forEach(function(post) { %>
+          <div class="post">
+            <a href="/blog/<%= post.slug %>">
+              <h2><%= post.title %></h2>
+            </a>
+            <p class="text-gray"><%= post.modified_at.split("T")[0].replace(/-/g, "/") %></p>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%- include("../partials/footer", {}) %>
+</body>
+</html>

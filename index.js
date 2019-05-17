@@ -5,6 +5,8 @@ const app = express()
 const router = express.Router()
 const ejs = require("ejs")
 const port = process.env.PORT
+const Cosmic = require('cosmicjs')
+const api = Cosmic()
 const { Q } = require("./db/")
 
 app.use(bodyParser.json())
@@ -18,8 +20,28 @@ app.set("view engine", "ejs")
 app.set("views", "views")
 app.use(express.static(path.join(__dirname, "/")), router)
 
+// CosmicJS bucket to get posts from
+const bucket = api.bucket({
+  slug: "deepmode-copy",
+})
+
 router.get("/", function(req, res) {
   res.render("index", {})	
+})
+
+router.get("/blog", async function(req, res) {
+  try {
+    const posts = (await bucket.getObjects()).objects;
+    res.render("blog", { posts });
+  } catch (err) {
+    console.log(err);
+    res.redirect("/");
+  }
+})
+
+router.get("/blog/:postSlug", async function(req, res) {
+  const post = (await bucket.getObject({ slug: req.params.postSlug })).object;
+  res.render("post", { post });
 })
 
 router.get("/roadmap", async function(req, res) {
