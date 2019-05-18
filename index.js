@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, "/")), router)
 
 // CosmicJS bucket to get posts from
 const bucket = api.bucket({
-  slug: "deepmode-copy",
+  slug: "deepmode-2",
 })
 
 router.get("/", function(req, res) {
